@@ -1,0 +1,66 @@
+body{
+    background-color: black !important;
+    color: white !important;
+}
+.parent{
+    position: relative;
+}
+.content{
+    position: absolute;
+    top: 28%;
+}
+.content1{
+    position: absolute;
+    width: 100%;
+    bottom: 10%;
+    left: 3%;
+    color: white;
+}
+.heading{
+    font-size:5rem;
+}
+.heading2{
+    font-size: 3.5rem;
+}
+.today_para{
+    font-size: larger;
+}
+.para_heading{
+    font-size: x-large;
+}
+label{
+    font-size: larger;
+}
+#start{
+    background-color: #282828;
+    color: white;
+}
+.list-group-item{
+    background-color: #282828 !important;
+    color: white !important;
+}
+.list-group-item-action:focus{
+    background-color: #8a8888 !important;
+}
+
+.card{
+    background-color: #282828 !important;
+    border-radius: 1rem;
+}
+.table{
+    color: white !important;
+    font-size: large;
+}
+
+
+@media only screen and (max-width:768px){
+    .heading{
+        font-size: 2.5rem;
+    }
+    .heading2{
+        font-size: 1.5rem;
+    }
+    .content1{
+        left: 10%;
+    }
+}

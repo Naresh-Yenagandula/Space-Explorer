@@ -1,24 +1,50 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useCallback, useEffect, useState } from 'react'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import Navbar from './components/Navbar'
+import AstriodTracker from './components/AstriodTracker'
+import ApiKey from './components/ApiKey'
+import './App.css'
+import IssTracker from './components/IssTracker'
+import Mars from './components/Mars'
+
+export const DataContext = React.createContext()
 
 function App() {
+  const [key, setKey] = useState()
+
+  const getAPIKey = useCallback(() => {
+    const localKey = localStorage.getItem('key')
+    if (localKey)
+     { setKey(localKey) }
+     else{
+       setKey(null)
+     }
+  }, [])
+
+  useEffect(() => {
+    getAPIKey()
+  }, [getAPIKey])
+
+  if (!key) {
+    return (
+      <DataContext.Provider value={{ getAPIKey: getAPIKey }}>
+        <ApiKey />
+      </DataContext.Provider>
+    )
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <DataContext.Provider value={{ apikey: key, getAPIKey: getAPIKey }}>
+      <Router>
+        <Navbar />
+        <Switch>
+          <Route exact path="/" component={AstriodTracker} />
+          <Route exact path="/astriod-tracker" component={AstriodTracker} />
+          <Route exact path="/iss-tracker" component={IssTracker} />
+          <Route exact path="/mars" component={Mars} />
+        </Switch>
+      </Router>
+    </DataContext.Provider>
   );
 }
 

@@ -35,16 +35,25 @@ img{
     .sol{
         text-align: center;
         width: 150px;
-        height: 100px;
+        height: 80px;
         background: rgba(0, 0, 0, 0.5);
-        padding: 8px;
+        padding: 5px;
         border-radius: 10px;
         margin-top: 5px;
     }
     .p_temp{
         font-size: medium;
     }
+    .p_description{
+        font-size: large;
+    }
+    .mars_h1{
+        font-size: x-large;
+    }
+    .hr_sm{
+        margin: 8px;
+    }
     .sm_h1{
-        font-size: medium;
+        font-size: larger;
     }
 }

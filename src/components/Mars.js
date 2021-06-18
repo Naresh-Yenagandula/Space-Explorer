@@ -17,23 +17,23 @@ function Mars() {
                         </div>
                     </div>
                     <div className="row mt-4">
-                        <div className="col-md-3 col-sm-4">
+                        <div className="col-md-3 col-sm-12">
                             <div className="sol">
-                                <h1 className="h1_sol sm_h1">Sol 265</h1><hr />
+                                <h1 className="h1_sol sm_h1">Sol 265</h1><hr className="hr_sm" />
                                 <p className="p_temp">25 April</p>
                             </div>
                         </div>
-                        <div className="col-md-3 col-sm-4">
+                        <div className="col-md-3 col-sm-12">
                             <div className="sol">
-                                <h1 className="sm_h1">Temp</h1><hr />
+                                <h1 className="sm_h1">Temp</h1><hr className="hr_sm" />
                                 <p className="p_temp d-none d-md-block">High: 50 F</p>
                                 <p className="p_temp d-none d-md-block">Low: 40 F</p>
                                 <p className="p_temp d-md-none">50 F</p>
                             </div>
                         </div>
-                        <div className="col-md-3 col-sm-4">
+                        <div className="col-md-3 col-sm-12">
                             <div className="sol">
-                                <h1 className="sm-h1">Wind</h1><hr />
+                            <h1 className="sm_h1">Wind</h1><hr className="hr_sm" />
                                 <p className="p_temp">5 kph</p>
                             </div>
                         </div>

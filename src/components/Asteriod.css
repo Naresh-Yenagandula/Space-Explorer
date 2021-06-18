@@ -8,12 +8,13 @@ body{
 .content{
     position: absolute;
     top: 28%;
+    left:5%
 }
 .content1{
     position: absolute;
     width: 100%;
     bottom: 10%;
-    left: 3%;
+    left: 5%;
     color: white;
 }
 .heading{

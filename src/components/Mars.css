@@ -1,3 +1,4 @@
+
 .content_mars{
     position: absolute;
     color: #f1f1f1;
@@ -10,9 +11,6 @@
     background: rgba(0, 0, 0, 0.5);
     padding: 20px;
     border-radius: 10px;
-}
-::-webkit-scrollbar{
-    display: none;
 }
 img{
     width: 100vw !important;
@@ -30,6 +28,17 @@ img{
 .p_temp{
     font-size:x-large;
     line-height: 20px;
+}
+.sol_h2{
+    font-size: x-large
+}
+.sol_p{
+    font-size: large;
+    line-height: 15px;
+}
+.sol_col{
+    padding: 1rem;
+    margin-right: 2rem;
 }
 @media only screen and (max-width: 768px){
     .sol{

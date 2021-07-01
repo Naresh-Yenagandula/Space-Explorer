@@ -1,8 +1,20 @@
-import React from 'react'
-import mars from '../Images/mars2.jpg'
+import React,{useEffect} from 'react'
+import mars from '../Images/mars3.jpg'
 import './Mars.css'
+// import { DataContext } from '../App';
+// import axios from 'axios'
+import MarsRover from './MarsRover'
 
 function Mars() {
+    // const value = useContext(DataContext)
+    // const [marsData, setMarsData]  = useState()
+
+    useEffect(()=>{
+        var root = document.documentElement
+        root.style.setProperty('--navbarColor','#2D5086') 
+        root.style.setProperty('--footerColor','#2D5086')
+    },[])
+
     return (
         <>
             <div className="d-flex align-items-center">
@@ -40,6 +52,54 @@ function Mars() {
                     </div>
                 </div>
             </div>
+            <div className="container mt-4 mb-4">
+                <h1 className="display-6">Previous 7 Days</h1>
+                <div className="row">
+                    <div className="col-auto sol_col">
+                        <h2 className="sol_h2">Sol 265</h2>
+                        <p className="sol_p">September 24</p>
+                        <p className="sol_p">High: 45 F</p>
+                        <p className="sol_p">Low: 40 F</p>
+                    </div>
+                    <div className="col-auto sol_col">
+                        <h2 className="sol_h2">Sol 265</h2>
+                        <p className="sol_p">September 24</p>
+                        <p className="sol_p">High: 45 F</p>
+                        <p className="sol_p">Low: 40 F</p>
+                    </div>
+                    <div className="col-auto sol_col">
+                        <h2 className="sol_h2">Sol 265</h2>
+                        <p className="sol_p">September 24</p>
+                        <p className="sol_p">High: 45 F</p>
+                        <p className="sol_p">Low: 40 F</p>
+                    </div>
+                    <div className="col-auto sol_col">
+                        <h2 className="sol_h2">Sol 265</h2>
+                        <p className="sol_p">September 24</p>
+                        <p className="sol_p">High: 45 F</p>
+                        <p className="sol_p">Low: 40 F</p>
+                    </div>
+                    <div className="col-auto sol_col">
+                        <h2 className="sol_h2">Sol 265</h2>
+                        <p className="sol_p">September 24</p>
+                        <p className="sol_p">High: 45 F</p>
+                        <p className="sol_p">Low: 40 F</p>
+                    </div>
+                    <div className="col-auto sol_col">
+                        <h2 className="sol_h2">Sol 265</h2>
+                        <p className="sol_p">September 24</p>
+                        <p className="sol_p">High: 45 F</p>
+                        <p className="sol_p">Low: 40 F</p>
+                    </div>
+                    <div className="col-auto sol_col">
+                        <h2 className="sol_h2">Sol 265</h2>
+                        <p className="sol_p">September 24</p>
+                        <p className="sol_p">High: 45 F</p>
+                        <p className="sol_p">Low: 40 F</p>
+                    </div>  
+                </div>
+            </div>
+            <MarsRover />
         </>
     )
 }

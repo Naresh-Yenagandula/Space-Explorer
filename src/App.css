@@ -1,0 +1,25 @@
+:root{
+    --navbarColor:#000000;
+    --footerColor:#000000
+}
+
+.navbar{
+    background-color: var(--navbarColor);
+}
+.nav-link{
+    color: #ffffff !important;
+}
+footer{
+    margin-top: 5rem;
+    padding: 0.1rem;
+    color:#ffffff;
+    background-color: var(--footerColor);
+}
+footer a{
+    color: #ffffff;
+    text-decoration: none;
+}
+footer a:hover{
+    color: #ffffff;
+
+}

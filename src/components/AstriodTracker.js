@@ -66,11 +66,15 @@ function AstriodTracker() {
     }
 
     useEffect(() => {
+        var root = document.documentElement
+        root.style.setProperty('--navbarColor','#000000')
+        root.style.setProperty('--footerColor','#000000')
         getData()
     }, [getData])
 
     return (
         <>
+        <style>{'body {background-color:#000000; color:white}'}</style>
             <div className="parent mb-4">
                 <img src={background} alt="Asteriod background" className="img-fluid" />
                 <div className="content">

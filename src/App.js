@@ -6,6 +6,7 @@ import ApiKey from './components/ApiKey'
 import './App.css'
 import IssTracker from './components/IssTracker'
 import Mars from './components/Mars'
+import Footer from './components/Footer'
 
 export const DataContext = React.createContext()
 
@@ -43,6 +44,7 @@ function App() {
           <Route exact path="/iss-tracker" component={IssTracker} />
           <Route exact path="/mars" component={Mars} />
         </Switch>
+        <Footer />
       </Router>
     </DataContext.Provider>
   );

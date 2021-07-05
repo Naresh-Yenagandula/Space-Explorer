@@ -1,0 +1,35 @@
+.mars_rover_section{
+    background-color: #2D5086;
+    padding: 3rem;
+}
+.mars_rover_section h2{
+    color: #ffffff;
+    margin-bottom: 2rem;
+}
+.mars_rover_section .btn{
+    background-color: #081B39;
+    color: #ffffff;
+    padding: 8px 30px;
+    border-radius: 20px;
+    width: 10rem;
+}
+.mars_rover_section .btn:hover{
+    color: #ffffff;
+    opacity: 90%;
+}
+.rover_section{
+    padding: 3rem;
+}
+.rover_section .btn{
+    background-color: #2D5086;
+    color: #ffffff;
+    border-radius: 20px;
+    width: 15rem;
+    padding: 10px 30px;
+    box-shadow: 8px 9px 6px #1a191921;
+}
+.rover_section .btn:hover{
+    box-shadow: none;
+    color: #ffffff;
+    background-color: #081B39;
+}
